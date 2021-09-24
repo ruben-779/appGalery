@@ -8,8 +8,8 @@
             height="50px"
         /></a>
       </li>
-      <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="#">Sobre nosotros</a></li>
+      <li><a href="#">Contacto</a></li>
     </ul>
   </nav>
 </header>
@@ -21,17 +21,13 @@
     alt=""
   />
 </div>
-<ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
-  </li>
-</ul>
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" routerLink="/" class="btn btn-secondary">
+    Mosaico
+  </button>
+  <button type="button" routerLink="/lista" class="btn btn-secondary">
+    Lista
+  </button>
+</div>
+
+<router-outlet></router-outlet>
